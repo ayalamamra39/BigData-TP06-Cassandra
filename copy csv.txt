@@ -1,0 +1,12 @@
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Abdarrahman\Downloads\restaurants>docker cp C:\Users\Abdarrahman\Downloads\restaurants\restaurants.csv mon-cassandra:/
+Successfully copied 2.11MB to mon-cassandra:/
+
+C:\Users\Abdarrahman\Downloads\restaurants>docker cp C:\Users\Abdarrahman\Downloads\restaurants\restaurants_inspections.csv mon-cassandra:/
+Successfully copied 82.5MB to mon-cassandra:/
+
+C:\Users\Abdarrahman\Downloads\restaurants>docker exec -it mon-cassandra ls /
+bin   __cacert_entrypoint.sh  etc   lib    lib64   media  opt   restaurants.csv              root  sbin  sys  usr
+boot  dev                     home  lib32  libx32  mnt    proc  restaurants_inspections.csv  run   srv   tmp  var
